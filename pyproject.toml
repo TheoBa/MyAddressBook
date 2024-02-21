@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "myaddressbook"
+version = "0.1.0"
+description = ""
+authors = ["Théo Badoz <theo.badoz-ext@pernod-ricard.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10.7"
+streamlit = "^1.31.1"
+spacy = "^3.7.4"
+fr_core_news_sm = {url = "https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.7.0/fr_core_news_sm-3.7.0.tar.gz"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
