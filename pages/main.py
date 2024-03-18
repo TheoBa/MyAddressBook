@@ -40,7 +40,9 @@ def confirm_information():
 
 
 def confirm_field(field_name, options):
-    if "failed to retrieve correct" not in options[0]:
+    if "failed to retrieve correct" in options[0]:
+        pass
+    else:
         options += [f"failed to retrieve correct {field_name}"]
     field = st.radio(f"**Contact {field_name}**", options)
     if "failed to retrieve correct" in field:
